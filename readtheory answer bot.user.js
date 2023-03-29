@@ -32,7 +32,7 @@
         const BioAdapt = {quiztitle:"Biological Adaptation", quizanswers: ["A","B","E","D","C"]};
         const BonCly = {quiztitle:"Bonnie and Clyde", quizanswers: ["E","D","B","C","D","E","C"]};
         const BookRec = {quiztitle:"Book of Records", quizanswers: ["A","D","C","E","B","E"]};
-        const Bovine = {quiztitle:"Bocine Somatotropin", quizanswers: ["C","E","E","D","B","E","D","A"]};
+        const Bovine = {quiztitle:"Bovine Somatotropin", quizanswers: ["C","E","E","D","B","E","D","A"]};
         const Chronic = {quiztitle:"Chronic Traumatic Encephalopathy", quizanswers: ["D","C","E","A","D","E","B"]};
         const Concentrated = {quiztitle:"Concentrated Animal Feeding Operations", quizanswers: ["A","D","C","E","B","A","C","B"]};
         const Concepts = {quiztitle:"Concenpts of Country", quizanswers: ["E","B","A","E","C","B"]};
