@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         readtheory answer bot
-// @version      1.0
+// @version      1.1
 // @description  no need to read. only works fro gr 12 quizzes. 
 // @author       Regreton
 // @match        https://readtheory.org/app/student/quiz
@@ -71,7 +71,7 @@
         const Novel = {quiztitle:"Novels and Novelists", quizanswers: ["E","A","D","A","B","E"]};
         const Offspring = {quiztitle:"Offspring of a Legend", quizanswers: ["E","C","D","D","D","C","A","E"]};
         const OverAuth = {quiztitle: "Overstepping Authority", quizanswers: ["C","E","D","A","B"]};
-        const Plague = {quiztitle:"Plague:Body and Mind", quizanswers: ["C","D","B","B","E","E","D","A"]};
+        const Plague = {quiztitle:"Plague: Body and Mind", quizanswers: ["C","D","B","B","E","E","D","A"]};
         const PTSD = {quiztitle:"Post-Traumatic Stress Disorder", quizanswers: ["E","E","C","E","D","A","D"]};
         const Predicting = {quiztitle:"Predicting Disaster", quizanswers: ["E","A","E","D","B","C"]};
         const PresMuseum = {quiztitle:"Presidential Museums", quizanswers: ["E","B","E","A","A","D"]};
