@@ -107,7 +107,8 @@
         const testTitle = document.querySelector("h2.quiz-header-title").textContent;
         const alltests = [Paints, ABeetleBox, AGoodDeath,ALackBias,APresTrad,AStreetcarDesire,AmericanFamily,Antibiotic,Antonio,ArguePos,Autism,BioAdapt,BonCly,BookRec, Bovine, Chronic, Concentrated, Concepts,Dismissed,Dracula,
                           Easter, EPCOT, Eric,Even, Experiment, Food,Freedom,Friendly,Frigg,From,Ghost,Giant,Grammar,Helmet,Hiroshima,Home, InImagined, InJeopardy, IntAug, ItsJeep, Killer, LibArts, Maintain, Mary,McCarthy,Minimal, Modern, Moths, MtnTop,
-                          New, Novel, Offspring,OverAuth,Plague,PTSD,Predicting,PresMuseum];
+                          New, Novel, Offspring,OverAuth,Plague,PTSD,Predicting,PresMuseum,Retreads,Revenge,Scrimshaw,TheBard,TheBends,TheBrave,TheElectoral,TheEnd,TheGreat,TheIrish,TheLegend,ThePsalms,TheRoots,TheScyth,Theater,Tick,Timeless,TransFats,
+                         Turbines,Unconscious,Veisalgia,WDFard,WhoWrote,Wind,Wright];
 
         for (let quiz of alltests) {
             let actualtitle = quiz;
