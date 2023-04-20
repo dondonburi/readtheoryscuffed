@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         readtheory answer bot
-// @version      1.1
+// @version      2.0
 // @description  no need to read. only works fro gr 12 quizzes. 
 // @author       Regreton
 // @match        https://readtheory.org/app/student/quiz
@@ -110,17 +110,60 @@
                           New, Novel, Offspring,OverAuth,Plague,PTSD,Predicting,PresMuseum,Retreads,Revenge,Scrimshaw,TheBard,TheBends,TheBrave,TheElectoral,TheEnd,TheGreat,TheIrish,TheLegend,ThePsalms,TheRoots,TheScyth,Theater,Tick,Timeless,TransFats,
                          Turbines,Unconscious,Veisalgia,WDFard,WhoWrote,Wind,Wright];
 
+        let choices = document.getElementsByClassName('answer-card');
+
         for (let quiz of alltests) {
             let actualtitle = quiz;
             if (quiz.quiztitle == testTitle) {
                 console.log(quiz.quiztitle);
-                let num = 0
+                let num = 0;
                 for (let ans of quiz.quizanswers) {
-                    num += 1
+                    num += 1;
                     console.log(num,". ",ans);
+
                 }
             }
         }
+
+        //function to click submit
+        function submitnext(){
+            setTimeout(() => {
+                        const submit = document.getElementsByClassName('primary-button student-quiz-page__question-submit quiz-tab-item focused');
+                        submit.item(0).click();
+                    }, "4000");
+
+                    setTimeout(() => {
+                        const next = document.getElementsByClassName('primary-button student-quiz-page__question-next next-btn quiz-tab-item focused');
+                        next.item(0).click();
+                    }, "5000");
+        }
+
+        //auto click
+        for (let quiz of alltests) {
+            let actualtitle = quiz;
+            if (quiz.quiztitle == testTitle) {
+                let waitt = 0;
+                for (let ans of quiz.quizanswers) {
+                    setTimeout(() => {
+                    if (ans == "A") {
+                        choices.item(0).click();
+                    } else if (ans == "B") {
+                        choices.item(1).click();
+                    } else if (ans == "C") {
+                        choices.item(2).click();
+                    } else if (ans == "D") {
+                        choices.item(3).click();
+                    } else if (ans == "E") {
+                        choices.item(4).click();
+                    }
+                        submitnext();
+                        }, waitt);
+                    waitt += 10000;
+
+                }
+            }
+        }
+
 
     }, 1000);
     // Your code here...
