@@ -33,6 +33,7 @@
         const BonCly = {quiztitle:"Bonnie and Clyde", quizanswers: ["E","D","B","C","D","E","C"]};
         const BookRec = {quiztitle:"Book of Records", quizanswers: ["A","D","C","E","B","E"]};
         const Bovine = {quiztitle:"Bovine Somatotropin", quizanswers: ["C","E","E","D","B","E","D","A"]};
+        const Capital = {quiztitle:"Capital Punishment", quizanswers: ["D,C,A,C,D,A,C,D,C,B"]};
         const Chronic = {quiztitle:"Chronic Traumatic Encephalopathy", quizanswers: ["D","C","E","A","D","E","B"]};
         const Concentrated = {quiztitle:"Concentrated Animal Feeding Operations", quizanswers: ["A","D","C","E","B","A","C","B"]};
         const Concepts = {quiztitle:"Concenpts of Country", quizanswers: ["E","B","A","E","C","B"]};
@@ -61,7 +62,7 @@
         const Killer = {quiztitle:"Killer Bees", quizanswers: ["A","C","A","E","B","D","C","C"]};
         const LibArts = {quiztitle:"Liberal Arts: Breadth in Curriculum", quizanswers: ["E","D","B","D","D","B","D","B"]};
         const Maintain = {quiztitle:"Maintaining Our Parks", quizanswers: ["A","A","B","D","C","C"]};
-        const Mary = {quiztitle:"Mary Celeste:Ghost Ship", quizanswers: ["C","E","D","A","E","A","A"]};
+        const Mary = {quiztitle:"Mary Celeste: Ghost Ship", quizanswers: ["C","E","D","A","E","A","A"]};
         const McCarthy = {quiztitle:"McCarthy at Wheeling", quizanswers: ["A","C","C","E","E","B","A","D"]};
         const Minimal = {quiztitle:"Minimal Footwear", quizanswers: ["E","E","B","E","C","C","D"]};
         const Modern = {quiztitle:"Modern Justice", quizanswers: ["E","B","A","D","B","C","E","D"]};
@@ -105,7 +106,7 @@
 
 
         const testTitle = document.querySelector("h2.quiz-header-title").textContent;
-        const alltests = [Paints, ABeetleBox, AGoodDeath,ALackBias,APresTrad,AStreetcarDesire,AmericanFamily,Antibiotic,Antonio,ArguePos,Autism,BioAdapt,BonCly,BookRec, Bovine, Chronic, Concentrated, Concepts,Dismissed,Dracula,
+        const alltests = [Paints, ABeetleBox, AGoodDeath,ALackBias,APresTrad,AStreetcarDesire,AmericanFamily,Antibiotic,Antonio,ArguePos,Autism,BioAdapt,BonCly,BookRec, Bovine, Capital, Chronic, Concentrated, Concepts,Dismissed,Dracula,
                           Easter, EPCOT, Eric,Even, Experiment, Food,Freedom,Friendly,Frigg,From,Ghost,Giant,Grammar,Helmet,Hiroshima,Home, InImagined, InJeopardy, IntAug, ItsJeep, Killer, LibArts, Maintain, Mary,McCarthy,Minimal, Modern, Moths, MtnTop,
                           New, Novel, Offspring,OverAuth,Plague,PTSD,Predicting,PresMuseum,Retreads,Revenge,Scrimshaw,TheBard,TheBends,TheBrave,TheElectoral,TheEnd,TheGreat,TheIrish,TheLegend,ThePsalms,TheRoots,TheScyth,Theater,Tick,Timeless,TransFats,
                          Turbines,Unconscious,Veisalgia,WDFard,WhoWrote,Wind,Wright];
