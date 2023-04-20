@@ -9,6 +9,7 @@ inspired by the khan academy bot by abudov1
 send feedback via this google form: https://forms.gle/KqMiZtXav7drZSdg6
 
 # how to download
+0. install tampermonkey
 1. open  readtheory answer bot.js
 2. click Raw button
 3. install
