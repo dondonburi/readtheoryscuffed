@@ -36,9 +36,9 @@
         const Capital = {quiztitle:"Capital Punishment", quizanswers: ["D,C,A,C,D,A,C,D,C,B"]};
         const Chronic = {quiztitle:"Chronic Traumatic Encephalopathy", quizanswers: ["D","C","E","A","D","E","B"]};
         const Concentrated = {quiztitle:"Concentrated Animal Feeding Operations", quizanswers: ["A","D","C","E","B","A","C","B"]};
-        const Concepts = {quiztitle:"Concenpts of Country", quizanswers: ["E","B","A","E","C","B"]};
+        const Concepts = {quiztitle:"Concepts of Country", quizanswers: ["E","B","A","E","C","B"]};
         const Dismissed = {quiztitle:"Dismissed", quizanswers: ["A","D","A","D"]};
-        const Dracula = {quiztitle:"Deacula and the Question of Authorship", quizanswers: ["B","C","A"]};
+        const Dracula = {quiztitle:"Dracula and the Question of Authorship", quizanswers: ["B","C","A"]};
         const Easter = {quiztitle:"Easter Island Moai", quizanswers: ["B","D","E","A","C"]};
         const EPCOT = {quiztitle:"EPCOT", quizanswers: ["B","C","D","D"]};
         const Eric = {quiztitle:"Eric Johnson's Dream: Postwar American Cinema", quizanswers: ["B","E","E","C","C","C"]};
