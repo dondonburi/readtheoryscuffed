@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         readtheory answer bot
-// @version      2.0
+// @version      2.01
 // @description  no need to read. only works fro gr 12 quizzes. 
 // @author       Regreton
 // @match        https://readtheory.org/app/student/quiz
@@ -56,7 +56,7 @@
         const Hiroshima = {quiztitle:"Hiroshima and Nagasaki", quizanswers: ["E","C","D","A","E","E","D","C","D","A"]};
         const Home = {quiztitle:"Home Sales News", quizanswers: ["A","A","D"]};
         const InImagined = {quiztitle:"In an Imagined Past", quizanswers: ["B","E","C","D"]};
-        const InJeopardy = {quiztitle:"In Jeopard: The Louisian Coast", quizanswers: ["D","B","E","C"]};
+        const InJeopardy = {quiztitle:"In Jeopardy: The Louisian Coast", quizanswers: ["D","B","E","C"]};
         const IntAug = {quiztitle:"Intelligence Augmentation", quizanswers: ["C","C","B","D","B","B"]};
         const ItsJeep = {quiztitle:"It's a Jeep", quizanswers: ["E","D","E","B","E","D","C"]};
         const Killer = {quiztitle:"Killer Bees", quizanswers: ["A","C","A","E","B","D","C","C"]};
