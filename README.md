@@ -17,5 +17,5 @@ send feedback via this google form: https://forms.gle/KqMiZtXav7drZSdg6
 # how to use
 1.open readtheory quiz
 2. open console
-#WARNING: DO NOT GO TO A DIFFERENT TAB WHILE THE CODE IS RUNNING. 
+# WARNING: DO NOT GO TO A DIFFERENT TAB WHILE THE CODE IS RUNNING. 
 it will offset the timing for answers and may cause you to fail the quiz
