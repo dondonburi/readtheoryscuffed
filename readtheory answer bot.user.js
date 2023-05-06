@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         readtheory answer bot
 // @version      2.01
-// @description  no need to read. only works fro gr 12 quizzes. 
+// @description  no need to read. only works fro gr 12 quizzes.
 // @author       Regreton
-// @match        https://readtheory.org/app/student/quiz
+// @match        https://readtheory.org/app/student/quiz*
 // @grant        none
 // @run-at       document-ready
 // ==/UserScript==
@@ -27,7 +27,7 @@
         const AmericanFamily = {quiztitle: "American Family", quizanswers: ["C","E","D","A","B","C"]};
         const Antibiotic = {quiztitle:"Antibiotic Resistance", quizanswers: ["C","B","A","E","C","A","C","E","C"]};
         const Antonio = {quiztitle:"Antonio's Revenge", quizanswers: ["C","B","E","C","A","B","D"]};
-        const ArguePos = {quiztitle:"Arguing Their POsition", quizanswers: ["C","B","D","E","A"]};
+        const ArguePos = {quiztitle:"Arguing Their Position", quizanswers: ["C","B","D","E","A"]};
         const Autism = {quiztitle:"Autism and Vaccines: No Link", quizanswers: ["C","E","E","D","A","D","C"]};
         const BioAdapt = {quiztitle:"Biological Adaptation", quizanswers: ["A","B","E","D","C"]};
         const BonCly = {quiztitle:"Bonnie and Clyde", quizanswers: ["E","D","B","C","D","E","C"]};
@@ -83,7 +83,7 @@
         const TheBends = {quiztitle:"The Bends", quizanswers: ["D","B","C","C","D","B","E","A"]};
         const TheBrave = {quiztitle:"The Bravery of Benjamin Lay", quizanswers: ["A","B","E","A","D"]};
         const TheElectoral = {quiztitle:"The Electoral College", quizanswers: ["D","E","B","A","E"]};
-        const TheEnd = {quiztitle:"The End of the Space Shuttle Program", quizanswers: ["CDDEB"]};
+        const TheEnd = {quiztitle:"The End of the Space Shuttle Program", quizanswers: ["C","D","D","E","B"]};
         const TheGreat = {quiztitle:"The Great Debates", quizanswers: ["E","E","C","C","B"]};
         const TheIrish = {quiztitle:"The Irish Potato Famine: A Harsh Reality", quizanswers: ["B","E","C","A","B"]};
         const TheLegend = {quiztitle:"The Legend of Krampus", quizanswers: ["A","B","A","E","D"]};
@@ -95,9 +95,9 @@
         const Timeless = {quiztitle:"Timelessness in Purple", quizanswers: ["E","D","A","B","C","C","D","E"]};
         const TransFats = {quiztitle:"Trans Fats", quizanswers: ["C","A","C","A","C","B","D"]};
         const Turbines = {quiztitle:"Turbines in the Backyard", quizanswers: ["B","A","E","C"]};
-        const Unconscious = {quiztitle:"Unconsius Racial Bias", quizanswers: ["B","E","C","B","A","D","D"]};
+        const Unconscious = {quiztitle:"Unconscious Racial Bias", quizanswers: ["B","E","C","B","A","D","D"]};
         const Veisalgia = {quiztitle:"Veisalgia", quizanswers: ["B","A","D","A","E","C"]};
-        const WDFard = {quiztitle:"W.D. Fard, the Prophet of the Nation of Islamd", quizanswers: ["E","B","C","A","E","D"]};
+        const WDFard = {quiztitle:"W.D. Fard, the Prophet of the Nation of Islam", quizanswers: ["E","B","C","A","E","D"]};
         const WhoWrote = {quiztitle:"Who Wrote Shakespeare?", quizanswers: ["D","C","A","A","E","C","D"]};
         const Wind = {quiztitle:"Wind Energy: Under Attack", quizanswers: ["D","B","E","A","E"]};
         const Wright = {quiztitle:"Wright and Nature", quizanswers: ["D","A","E","C","C"]};
@@ -105,11 +105,13 @@
 
 
 
-        const testTitle = document.querySelector("h2.quiz-header-title").textContent;
         const alltests = [Paints, ABeetleBox, AGoodDeath,ALackBias,APresTrad,AStreetcarDesire,AmericanFamily,Antibiotic,Antonio,ArguePos,Autism,BioAdapt,BonCly,BookRec, Bovine, Capital, Chronic, Concentrated, Concepts,Dismissed,Dracula,
                           Easter, EPCOT, Eric,Even, Experiment, Food,Freedom,Friendly,Frigg,From,Ghost,Giant,Grammar,Helmet,Hiroshima,Home, InImagined, InJeopardy, IntAug, ItsJeep, Killer, LibArts, Maintain, Mary,McCarthy,Minimal, Modern, Moths, MtnTop,
                           New, Novel, Offspring,OverAuth,Plague,PTSD,Predicting,PresMuseum,Retreads,Revenge,Scrimshaw,TheBard,TheBends,TheBrave,TheElectoral,TheEnd,TheGreat,TheIrish,TheLegend,ThePsalms,TheRoots,TheScyth,Theater,Tick,Timeless,TransFats,
                          Turbines,Unconscious,Veisalgia,WDFard,WhoWrote,Wind,Wright];
+
+        try {
+        const testTitle = document.querySelector("h2.quiz-header-title").textContent;
 
         let choices = document.getElementsByClassName('answer-card');
 
@@ -133,10 +135,17 @@
                         submit.item(0).click();
                     }, "4000");
 
-                    setTimeout(() => {
+            setTimeout(() => {
                         const next = document.getElementsByClassName('primary-button student-quiz-page__question-next next-btn quiz-tab-item focused');
                         next.item(0).click();
                     }, "5000");
+            setTimeout(() => {
+                try{
+                    const continueButton = document.getElementsByClassName("primary-button student-quiz-page__question-continue continue-btn quiz-tab-item focused");
+                    continueButton.item(0).click();
+                    continueButton.item(0).click();
+                } catch (err) {}
+            }, "9000");
         }
 
         //auto click
@@ -164,7 +173,12 @@
                 }
             }
         }
-
+        } catch (err) {
+            setTimeout(() => {
+            const nextQuiz = document.getElementsByClassName("primary-button btn-next-quiz");
+            nextQuiz.item(0).click();
+                }, "5000");
+        }
 
     }, 1000);
     // Your code here...
