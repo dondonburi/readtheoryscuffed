@@ -20,7 +20,7 @@
         //Grade 12 quizzes
         const Paints = {quiztitle: '"Paints"', quizanswers: ["E","B","C","A","E","C","A","C"]};
         const ABeetleBox = {quiztitle: "A Beetle in a Box", quizanswers: ["C","D","E","B"]};
-        const AGoodDeath = {quiztitle: "A Good Death", quizanswers: ["C","D","B","C","B","E","C","E"]};
+        const AGoodDeath = {quiztitle: "A Good Death", quizanswers: ["C","B","C","B","E","C","E"]};
         const ALackBias = {quiztitle: "A Lack of Bias", quizanswers: ["E","D","A","B","C"]};
         const APresTrad = {quiztitle: "A Presidential Tradition: Reaching the People", quizanswers: ["C","A","E","B","D","C","C","A"]};
         const AStreetcarDesire = {quiztitle: "A Streetcar Named Desire: Two Viewpoints", quizanswers: ["D","C","A","E","C"]};
