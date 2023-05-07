@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         readtheory answer bot
-// @version      2.01
+// @version      2.1
 // @description  no need to read. only works fro gr 12 quizzes.
 // @author       Regreton
 // @match        https://readtheory.org/app/student/quiz*
@@ -33,7 +33,7 @@
         const BonCly = {quiztitle:"Bonnie and Clyde", quizanswers: ["E","D","B","C","D","E","C"]};
         const BookRec = {quiztitle:"Book of Records", quizanswers: ["A","D","C","E","B","E"]};
         const Bovine = {quiztitle:"Bovine Somatotropin", quizanswers: ["C","E","E","D","B","E","D","A"]};
-        const Capital = {quiztitle:"Capital Punishment", quizanswers: ["D,C,A,C,D,A,C,D,C,B"]};
+        const Capital = {quiztitle:"Capital Punishment", quizanswers: ["D","C","A","C","D","A","C","D","C","B"]};
         const Chronic = {quiztitle:"Chronic Traumatic Encephalopathy", quizanswers: ["D","C","E","A","D","E","B"]};
         const Concentrated = {quiztitle:"Concentrated Animal Feeding Operations", quizanswers: ["A","D","C","E","B","A","C","B"]};
         const Concepts = {quiztitle:"Concepts of Country", quizanswers: ["E","B","A","E","C","B"]};
