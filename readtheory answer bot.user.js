@@ -29,7 +29,7 @@
         const Antonio = {quiztitle:"Antonio's Revenge", quizanswers: ["C","B","E","C","A","B","D"]};
         const ArguePos = {quiztitle:"Arguing Their Position", quizanswers: ["C","B","D","E","A"]};
         const Autism = {quiztitle:"Autism and Vaccines: No Link", quizanswers: ["C","E","E","D","A","D","C"]};
-        const BioAdapt = {quiztitle:"Biological Adaptation", quizanswers: ["A","B","E","D","C"]};
+        const BioAdapt = {quiztitle:"Biological Adaptation", quizanswers: ["A","E","D","C"]};
         const BonCly = {quiztitle:"Bonnie and Clyde", quizanswers: ["E","D","B","C","D","E","C"]};
         const BookRec = {quiztitle:"Book of Records", quizanswers: ["A","D","C","E","B","E"]};
         const Bovine = {quiztitle:"Bovine Somatotropin", quizanswers: ["C","E","E","D","B","E","D","A"]};
