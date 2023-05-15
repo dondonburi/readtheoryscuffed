@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         readtheory answer bot
-// @version      2.1
+// @version      3.0
 // @description  no need to read. only works fro gr 12 quizzes.
 // @author       Regreton
 // @match        https://readtheory.org/app/student/quiz*
