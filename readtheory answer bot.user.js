@@ -114,7 +114,7 @@
         const testTitle = document.querySelector("h2.quiz-header-title").textContent;
 
         let choices = document.getElementsByClassName('answer-card');
-
+            //prints answers
         for (let quiz of alltests) {
             let actualtitle = quiz;
             if (quiz.quiztitle == testTitle) {
@@ -147,14 +147,14 @@
                 } catch (err) {}
             }, "9000");
         }
-
+            const idList = [];
         //auto click
         for (let quiz of alltests) {
             let actualtitle = quiz;
             if (quiz.quiztitle == testTitle) {
-                let waitt = 0;
+                let waitt = 1200;
                 for (let ans of quiz.quizanswers) {
-                    setTimeout(() => {
+                    var timerID = setTimeout(() => {
                     if (ans == "A") {
                         choices.item(0).click();
                     } else if (ans == "B") {
@@ -169,10 +169,29 @@
                         submitnext();
                         }, waitt);
                     waitt += 11000;
-
+                    idList.push(timerID);
                 }
             }
         }
+            //checks for error and clears the clicking stuff
+            //console.log(idList);
+            let isWrong = 0; isWrong += 1;
+
+            let myInterval = setInterval(intervalTest, 1000);
+            function intervalTest() {
+                let progressTrack = document.getElementsByClassName("question-marker submitted");
+                for (let i = 0; i < progressTrack.length; i++) {
+                    if (progressTrack.item(i).innerHTML.includes("/assets/app/quiz/icon-answer-failed.svg") == 1) {
+                        console.log("There's a wrong answer.");
+                        for (let id of idList) {
+                            clearTimeout(id);
+                        }
+                        console.log("Auto-click for answers was cancelled.");
+                        clearInterval(myInterval);
+                    }
+                }
+            }
+
         } catch (err) {
             setTimeout(() => {
             const nextQuiz = document.getElementsByClassName("primary-button btn-next-quiz");
@@ -181,5 +200,7 @@
         }
 
     }, 1000);
+
+
     // Your code here...
 })();
